@@ -1,0 +1,23 @@
+﻿<Application x:Class="Trajectory.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Trajectory"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Color x:Key="SSLBackgroundColor">#FF3C3C3C</Color>
+        <SolidColorBrush x:Key="SSLBackground" Color="{DynamicResource SSLBackgroundColor}" />
+        <Style TargetType="Label">
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="IsReadOnly" Value="True" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Background" Value="{DynamicResource SSLBackground}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Focusable" Value="False" />
+        </Style>
+        <Style TargetType="Slider">
+        </Style>
+    </Application.Resources>
+</Application>
